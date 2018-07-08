@@ -1,0 +1,5 @@
+polygon 1 area:    32
+polygon 2 area:    30
+polygon 3 area:    80
+polygon 4 area:    34
+polygon 5 a1316469529
