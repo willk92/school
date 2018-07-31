@@ -1,0 +1,21 @@
+throttle-results.txt -- William Kelley
+Explicit call(==):
+Shuttle and Truck throttles not equal...
+Implicit call(==):
+Shuttle and Truck throttles not equal...
+Explicit call(!=):
+mythrottle and Truck throttles equal...
+Implicit call(!=):
+mythrottle and Truck throttles equal...
+Car
+Max Position:     6
+Current Position: 0
+Truck
+Max Position:     30
+Current Position: 0
+Shuttle
+Max Position:     20
+Current Position: 6
+mythrottle(truck)
+Max Position:     30
+Current Position: 0

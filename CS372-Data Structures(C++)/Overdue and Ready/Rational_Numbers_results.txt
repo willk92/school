@@ -1,0 +1,26 @@
+William Kelley
+Rational_Numbers_results.txt
+Rational Number Objects
+a                 :3/8
+b                 :4/7
+c                 :1/5
+d                 :4/12
+e                 :3/5
+f                 :4/1
+g                 :3/0
+
+
+Mathematical Operations on Rational Number Objects
+(a + b)           :53/112
+(c * d)           :4/60
+(d / e)           :36/20
+(c - a)           :7/0
+((a + b)*(f - d)) :-2332/0
+((d / a) + c)     :212/320
+
+
+Equal/Not Equal Operations
+1 = True
+2 = False
+(d==b)            :0
+(e!=a)            :1

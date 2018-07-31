@@ -1,0 +1,13 @@
+shiftpositions_results.txt
+# of Throttle Positions: 10
+Position Shifted: 9
+The flow is now 0.9
+The flow is now 0.8
+The flow is now 0.7
+The flow is now 0.6
+The flow is now 0.5
+The flow is now 0.4
+The flow is now 0.3
+The flow is now 0.2
+The flow is now 0.1
+The flow is now off

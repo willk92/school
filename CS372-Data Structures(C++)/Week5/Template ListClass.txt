@@ -1,0 +1,77 @@
+#include <iostream.h>
+
+
+template <typename ListType, int MAX>
+class List
+{
+private:
+	ListType	ary[MAX+1];
+	int	endpos;
+	int	currentpos;
+
+public:
+	//constructors
+  List::List()
+  {	for (int i=0; i<=MAX; i++)
+  		ary[i] = 0;
+	endpos = 0;
+	currentpos = 0;
+  }
+
+  List::List( List<ListType, MAX> & initObj)
+  {	
+	ary[0]=0;
+  	initObj.First();
+  	for (int i=1; i<=MAX; i++)
+	{	ary[i] = initObj.Examine();
+		initObj.Next();
+	}
+	endpos = initObj.Getendpos();
+	currentpos = 1;
+  }
+
+	//accessors
+  int List::Current()
+  { return currentpos; }
+
+  int List::Count()
+  { return endpos; }
+
+  int List::Getendpos()
+  { return endpos; }
+
+
+	//modifiers &  List operators
+
+  void List::First()
+  {     currentpos = endpos == 0  ? 0 : 1; }
+
+  void List::Last()
+  {     currentpos = endpos; }
+
+  int List::Makecurrent(int i)
+  {     return (currentpos = i < endpos ? i : 0 ); }
+
+
+	// Iinput / Output
+  friend ostream & operator<<( ostream & out, const List<ListType,MAX> & list)
+  {
+	if ( list.endpos != 0 )
+  	   for ( int i = 1; i <= list.endpos; i++)
+	      cout << list.ary[i] << " ";
+	else
+	   cerr << "No elements in list to print\n";
+  	return out;
+  }
+
+  friend istream & operator>>( istream & in, List<ListType,MAX> & list)
+  {
+	list.endpos = 0;
+	while (in)
+	      in >> list.ary[list.endpos++];
+	list.currentpos = list.endpos;
+  	return in;
+  }
+
+};  // end of List Class
+

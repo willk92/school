@@ -1,0 +1,100 @@
+statistician-results.txt -- William Kelley
+s1 statistician:
+Sum:     30.8
+Length:  7
+Average: 4.4
+
+s1 statistician:
+Length:   12
+Sum:      32.9
+Average:  2.7
+Smallest: -8.5
+Largest:  9.1
+Last:     5.5
+
+s1 statistician:
+Length:   12
+Sum:      32.9
+Average:  2.7
+Smallest: -8.5
+Largest:  9.1
+Last:     5.5
+
+s2 statistician:
+Length:   12
+Sum:      32.9
+Average:  2.7
+Smallest: -8.5
+Largest:  9.1
+Last:     5.5
+
+s2 statistician:
+Sum:     324.9
+Length:  22
+Average: 14.8
+
+s1 statistician:
+Length:   12
+Sum:      32.9
+Average:  2.7
+Smallest: -8.5
+Largest:  9.1
+Last:     5.5
+
+s2 statistician:
+Length:   22
+Sum:      324.9
+Average:  14.8
+Smallest: -8.5
+Largest:  71.0
+Last:     32.0
+
+s1 statistician:
+Length:   12
+Sum:      32.9
+Average:  2.7
+Smallest: -8.5
+Largest:  9.1
+Last:     5.5
+
+s2 statistician:
+Length:   22
+Sum:      324.9
+Average:  14.8
+Smallest: -8.5
+Largest:  71.0
+Last:     32.0
+
+s3 statistician:
+Length:   34
+Sum:      357.8
+Average:  10.5
+Smallest: -8.5
+Largest:  71.0
+Last:     32.0
+
+Final Prints
+
+s1 statistician:
+Length:   12
+Sum:      32.9
+Average:  2.7
+Smallest: -8.5
+Largest:  9.1
+Last:     5.5
+
+s2 statistician(erased):
+Length:   12
+Sum:      32.9
+Average:  2.7
+Smallest: -8.5
+Largest:  9.1
+Last:     5.5
+
+s3 statistician:
+Length:   34
+Sum:      357.8
+Average:  10.5
+Smallest: -8.5
+Largest:  71.0
+Last:     32.0

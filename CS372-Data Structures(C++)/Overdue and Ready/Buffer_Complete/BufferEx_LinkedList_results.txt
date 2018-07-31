@@ -1,0 +1,20 @@
+
+Buffer Size(4)
+Accesses to Memory: 58
+miney|total|sumup|joe|
+
+Buffer Size(5)
+Accesses to Memory: 51
+miney|total|sumup|joe|blue|
+
+Buffer Size(6)
+Accesses to Memory: 44
+miney|total|sumup|joe|blue|blur|
+
+Buffer Size(7)
+Accesses to Memory: 40
+miney|total|sumup|joe|blue|blur|sid|
+
+Buffer Size(8)
+Accesses to Memory: 38
+miney|total|sumup|joe|blue|blur|sid|goo|
