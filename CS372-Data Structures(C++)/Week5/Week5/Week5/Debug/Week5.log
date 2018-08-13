@@ -1,6 +1,0 @@
-﻿  Queue-Suitors.cpp
-d:\documents\visual studio 2015\projects\cs372\week5\week5\queue-suitors.cpp(119): warning C4018: '<': signed/unsigned mismatch
-d:\documents\visual studio 2015\projects\cs372\week5\week5\queue-suitors.cpp(195): warning C4018: '<=': signed/unsigned mismatch
-d:\documents\visual studio 2015\projects\cs372\week5\week5\queue-suitors.cpp(328): warning C4018: '>': signed/unsigned mismatch
-  Week5.vcxproj -> d:\documents\visual studio 2015\Projects\CS372\Week5\Debug\Week5.exe
-  Week5.vcxproj -> d:\documents\visual studio 2015\Projects\CS372\Week5\Debug\Week5.pdb (Full PDB)
