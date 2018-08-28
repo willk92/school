@@ -1,0 +1,6 @@
+/Users/williamkelley/Documents/GitHub/school/CS451-Software Engineering/Assignment 1/CS451-Average/CS451-Average/obj/x86/Debug/CS451-Average.csprojResolveAssemblyReference.cache
+/Users/williamkelley/Documents/GitHub/school/CS451-Software Engineering/Assignment 1/CS451-Average/CS451-Average/obj/x86/Debug/CS451-Average.csproj.CoreCompileInputs.cache
+/Users/williamkelley/Documents/GitHub/school/CS451-Software Engineering/Assignment 1/CS451-Average/CS451-Average/bin/Debug/CS451-Average.exe
+/Users/williamkelley/Documents/GitHub/school/CS451-Software Engineering/Assignment 1/CS451-Average/CS451-Average/bin/Debug/CS451-Average.pdb
+/Users/williamkelley/Documents/GitHub/school/CS451-Software Engineering/Assignment 1/CS451-Average/CS451-Average/obj/x86/Debug/CS451-Average.exe
+/Users/williamkelley/Documents/GitHub/school/CS451-Software Engineering/Assignment 1/CS451-Average/CS451-Average/obj/x86/Debug/CS451-Average.pdb

@@ -1,0 +1,3 @@
+William Kelley
+Output For Average
+5.5 was the average.
