@@ -3,17 +3,26 @@
 * CS414-Programming Languages
 * Double N until value is > 100
 
-      program main
+      PROGRAM MAIN
 
-      implicit none
+      INTEGER VALUE, MAX
 
-      SUM = 0
-      DO 10, I = 1,100
-         SUM = SUM * 2
-         PRINT *, 'Current value', SUM
-      10 CONTINUE
+      VALUE = 1
+      MAX = 100
+      DO WHILE (VALUE.LT.MAX)
+            VALUE = VALUE * 2
+            PRINT *, "Current Value: ", VALUE
+      END DO
 
+      STOP
+      END
 
-
-      stop
-      end
+c RESULTS OF ABOVE PROGRAM:
+c parallels@ubuntu:~/school/CS414-Programming Languages/Fortran$ ./doublen
+c  Current Value:            2
+c  Current Value:            4
+c  Current Value:            8
+c  Current Value:           16
+c  Current Value:           32
+c  Current Value:           64
+c  Current Value:          128
