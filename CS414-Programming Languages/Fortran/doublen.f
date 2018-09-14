@@ -1,6 +1,6 @@
 * doublen.f FORTRAN77
 * William Kelley
-* CS414-Programming Languages
+* CS414-Programming Languages(2-2)
 * Double N until value is > 100
 
       PROGRAM MAIN
