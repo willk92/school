@@ -1,7 +1,7 @@
-* goto.f FORTRAN77
+* subprogram.f FORTRAN77
 * William Kelley
-* CS414 Programming Languages(2-4)
-* GOTO written as IF statements
+* CS414 Programming Languages(2-15)
+* Subprogram testing
 * Must be two tabs in for program to run...(FACEPALM)
 
         IMPLICIT NONE
@@ -37,21 +37,3 @@
 
         STOP
         END
-
-c  Starting
-c  Got to 10
-
-c  Starting
-c  Got to 10
-c  Got to 20
-
-c  Starting
-c  Got to 10
-c  Got to 20
-c  Got to 30
-
-c  Starting
-c  Got to 10
-c  Got to 20
-c  Got to 30
-c  Got to 40
