@@ -1,4 +1,4 @@
-* fibnoacci.f FORTRAN77
+* goto.f FORTRAN77
 * William Kelley
 * CS414 Programming Languages(2-4)
 * GOTO written as IF statements
@@ -7,53 +7,52 @@
         IMPLICIT NONE
         INTEGER  I                                     !! Index.
 
-c.......................................................................
-
-C     Initial value.
         I=0
-*     I=2                                            !! To test error.
 
-c.......................................................................
-
-C     Set index.
     1   CONTINUE
         WRITE(*,*)
         I=I+1
 
-C     Check range of I.
-        IF (I.GT.2) GOTO 95                            !! Error.
+        WRITE(*,*) 'Starting'
+        IF (I.EQ.1) GOTO 1                          
+        GOTO 10                                        
 
-C     Choose path.
-        WRITE(*,*) 'I =',I,'  Starting'
-        IF (I.EQ.1) GOTO 10                            !! First path.
-        GOTO 20                                        !! Second path.
-
-C     First path.
    10   CONTINUE
-        WRITE(*,*) 'I =',I,'  Got to 10'
-        GOTO 30                                        !! Both paths.
+        WRITE(*,*) 'Got to 10'
+        IF (I.EQ.2) GOTO 1
+        GOTO 20                                  
 
-C     Second path.
    20   CONTINUE
-        WRITE(*,*) 'I =',I,'  Got to 20'
+        WRITE(*,*) 'Got to 20'
+        IF (I.EQ.3) GOTO 1
+        GOTO 30
 
-C     Both paths.
    30   CONTINUE
-        WRITE(*,*) 'I =',I,'  Got to 30'
-        IF (I.EQ.2) GOTO 99                            !! Finish off.
-        GOTO 1                                         !! Set index.
+        WRITE(*,*) 'Got to 30'
+        IF (I.EQ.4) GOTO 1                            !! Finish off.
+        GOTO 40                                         !! Set index.
 
-c.......................................................................
+   40   CONTINUE
+        WRITE(*,*) 'Got to 40'
 
-C     Error: I too large.
-   95   CONTINUE
-        WRITE(*,*) 'I =',I,'  Got to 95'
-
-c.......................................................................
-
-C     Finish off.
-   99   CONTINUE
-        WRITE(*,*) 'I =',I,'  Got to 99'
-
-        STOP ' '
+        STOP
         END
+
+         Starting
+
+c  Got to 10
+
+c  Starting
+c  Got to 10
+c  Got to 20
+
+c  Starting
+c  Got to 10
+c  Got to 20
+c  Got to 30
+
+c  Starting
+c  Got to 10
+c  Got to 20
+c  Got to 30
+c  Got to 40
