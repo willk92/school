@@ -4,36 +4,24 @@
 * Subprogram testing
 * Must be two tabs in for program to run...(FACEPALM)
 
-        IMPLICIT NONE
-        INTEGER  I                                     !! Index.
+      INTEGER M,N
 
-        I=0
+      N = 2
+      M = 0                         !! Initiating value of M
+      
+      CALL TEST(N, N, M)
+      PRINT *, "N passed by reference", N
+      PRINT *, "M passed by reference", M
 
-    1   CONTINUE
-        WRITE(*,*)
-        I=I+1
+      STOP
+      END
 
-        WRITE(*,*) 'Starting'
-        IF (I.EQ.1) GOTO 1                          
-        GOTO 10                                        
+      SUBROUTINE TEST(X, Y, Z)
+      INTEGER X, Y, Z
+      X = 1                         !! X changes value of N(reference)
+      Z = X + Y                     !! Z changes value of M(reference)
+      RETURN
+      END
 
-   10   CONTINUE
-        WRITE(*,*) 'Got to 10'
-        IF (I.EQ.2) GOTO 1
-        GOTO 20                                  
-
-   20   CONTINUE
-        WRITE(*,*) 'Got to 20'
-        IF (I.EQ.3) GOTO 1
-        GOTO 30
-
-   30   CONTINUE
-        WRITE(*,*) 'Got to 30'
-        IF (I.EQ.4) GOTO 1                            !! Finish off.
-        GOTO 40                                         !! Set index.
-
-   40   CONTINUE
-        WRITE(*,*) 'Got to 40'
-
-        STOP
-        END
+c N passed by reference           1
+c M passed by reference           2
