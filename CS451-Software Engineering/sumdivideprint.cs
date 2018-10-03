@@ -1,4 +1,10 @@
-﻿using System;
+// William Kelley
+// CS451-SoftwareEngineering
+// sumdivideprint.cs
+// Exam Question - 15
+// Gather a sum of 10 numbers and divide by the 11th
+
+using System;
 using System.Collections.Generic;
 
 namespace exam451question15
