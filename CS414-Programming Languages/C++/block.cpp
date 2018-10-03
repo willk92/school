@@ -20,4 +20,4 @@ int main()
 }
 
 // Will not compile. States the identifier "sum" is undefined and is an undeclared identifier.
-// This is due to the value being out of scope.
+// This is due to the value being out of scope and fails at line 14.
