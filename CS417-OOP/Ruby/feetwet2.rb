@@ -7,11 +7,19 @@
 # feetwet2.rb
 
 def numSmaller(list, item)
-  numElements = list.find_all { |x| x < item }
-  return numElements.count()
+  if list.count() > 0
+    numElements = list.find_all { |x| x < item }
+    return numElements.count()
+  else
+    return "Array not of size 1 or larger"
+  end
 end
 
 nums = 1,2,3,1,1,2,3,4,5
 num = 3
 
+fails = []
+willfail = 0
+
 puts numSmaller(nums,num)
+puts numSmaller(fails, willfail)
