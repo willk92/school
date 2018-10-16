@@ -8,17 +8,21 @@
 # https://stackoverflow.com/questions/21566397/finding-the-index-of-second-smallest-number-in-the-list
 # feetwet3.rb
 
-def secondSmallest(arr)
-  mn = arr.min
-  mx = arr.max
-  arr.map! { |e| e == mn ? mx : e }
-  num = arr.min
-  p arr.each_index.select{|i| arr[i] == num}
-  var = p[1]
-  puts var
-  return p
+def secondSmallest(list)
+  mn = list.min
+  mx = list.max
+  list.map! { |e| e == mn ? mx : e }
+  num = list.min
+  arr = list.each_index.select{|i| list[i] == num}
+  val = 0
+  if arr.count() > 1
+    val = arr[1]
+  else
+    val = arr[0]
+  end
+  return val
 end
 
-nums = 1,2,3,3,1,1,2,3,4,5
+nums = 1,2,3,3,1,2,1,3,4,5
 
 puts secondSmallest(nums)
