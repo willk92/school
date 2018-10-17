@@ -1,5 +1,7 @@
 # William Kelley
 # CS417-OOP
+# https://stackoverflow.com/questions/13659696/find-indices-of-elements-that-match-a-given-condition
+# https://stackoverflow.com/questions/21566397/finding-the-index-of-second-smallest-number-in-the-list
 # feetwet.rb
 
 def occurences(list, key)
@@ -61,14 +63,29 @@ willfail = 0
 iterMap = 1,2,3
 recMap = 1,2,3
 
+puts " "
+puts "---Problem 1---"
+puts "Problem 1: Numbers"
 puts occurences(nums,num)
+puts "Problem 1: Strings"
 puts occurences(strings, string)
+puts "Problem 1: Characters"
 puts occurences(characters, character)
 
+puts " "
+puts "---Problem 2---"
+puts "Problem 2: Succeeding"
 puts numSmaller(nums,num)
+puts "Problem 2: Failing Case"
 puts numSmaller(fails, willfail)
 
+puts " "
+puts "---Problem 3---"
 puts secondSmallest(nums)
 
-iterativeMap(iterMap)
-recursiveMap(recMap, (recMap.count()-1))
+puts " "
+puts "---Problem 4---"
+puts "Problem 4: Iterative"
+puts iterativeMap(iterMap)
+puts "Problem 4: Recursive"
+puts recursiveMap(recMap, (recMap.count()-1))
