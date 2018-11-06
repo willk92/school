@@ -1,0 +1,55 @@
+cell * cdr(cell *ptr)
+{
+	char a = ptr->down->value;
+	cell *tp = new cell('(');
+	if (a == '$' || a == '&' || a == '^')
+	{
+		tp = eval(ptr->down); //don't know if that's right
+	}
+	a = tp->down->right->value;
+	if (a == '$' || a == '&' || a == '^')
+	{
+		tp = eval(ptr->down->right);
+	}
+	tp->down = tp->down->right;
+	return tp;
+}
+
+
+
+
+cell * cons(cell *ptr)
+{
+	char a;
+	cell *tp = new cell('(');
+	a = ptr->right->down->value;
+	if (a == '$' || a == '&' || a == '^')
+		tp->down = eval(ptr->right->down);
+	else
+		tp->down = ptr->right->down;
+	a = ptr->right->right->value;
+	if (a == '$' || a == '&' || a == '^')
+		tp = eval(ptr->right->right);
+	else
+		tp = ptr->right->right;
+	return tp;
+}
+
+
+
+cell * car(cell *ptr)
+{
+	char a = ptr->value;
+	cell *tp = new cell('(');
+	if (a == '$' || a == '&' || a == '^')
+	{
+		ptr = eval(ptr->right); //don't know if that's right
+	}
+	a = ptr->down->value;
+	if (a == '$' || a == '&' || a == '^')
+	{
+		ptr = eval(ptr->down);
+	}
+	tp->value = ptr->down->value;
+	return tp;
+}

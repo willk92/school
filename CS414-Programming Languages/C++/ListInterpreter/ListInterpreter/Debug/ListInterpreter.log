@@ -1,0 +1,4 @@
+﻿  Source.cpp
+\\mac\home\downloads\listinterpreter\listinterpreter\cell.hxx(35): warning C4018: '>=': signed/unsigned mismatch
+\\mac\home\downloads\listinterpreter\listinterpreter\cell.hxx(47): warning C4018: '>=': signed/unsigned mismatch
+  ListInterpreter.vcxproj -> \\Mac\Home\Downloads\ListInterpreter\Debug\ListInterpreter.exe

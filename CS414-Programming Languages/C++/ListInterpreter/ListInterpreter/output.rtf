@@ -1,0 +1,56 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Before Build: ( car '( r  s  t  z ) )\
+After Build:  (car (r s t z ))\
+After Eval:   r\
+\
+Before Build: ( cdr '( r  s  t  z ) )\
+After Build:  (cdr (r s t z ))\
+After Eval:   (s t z )\
+\
+Before Build: ( cons 'u '( v  w  x ) )\
+After Build:  (cons u (v w x ))\
+After Eval:   (u v w x )\
+\
+Before Build: ( car ( cdr '( r  s  t  u ) ) )\
+After Build:  (car (cdr (r s t u )))\
+After Eval:   s\
+\
+Before Build: ( car ( cdr  ( cdr '( r s  t  u ) ) ) )\
+After Build:  (car (cdr (cdr (r s t u ))))\
+After Eval:   t\
+\
+Before Build: ( cdr ( cdr  ( cdr  ( cdr '( r s  t  u ) ) ) ) )\
+After Build:  (cdr (cdr (cdr (cdr (r s t u )))))\
+After Eval:   ()\
+\
+Before Build: ( car ( car '( ( r  s ) ( t  v ) ) ) )\
+After Build:  (car (car ((r s )(t v ))))\
+After Eval:   r\
+\
+Before Build: ( cons '( r s ) '( ( t  u ) ) )\
+After Build:  (cons (r s )((t u )))\
+After Eval:   ((r s )(t u ))\
+\
+Before Build: ( cdr ( cons ( car '( r ) ) '( s  t  u  v  w  x ) ) )\
+After Build:  (cdr (cons (car (r ))(s t u v w x )))\
+After Eval:   (s t u v w x )\
+\
+Before Build: ( cons ( car '( r  v   s ) ) ( cdr '( t  x ) ) )\
+After Build:  (cons (car (r v   s ))(cdr (t x )))\
+After Eval:   (r x )\
+\
+Before Build: ( car ( cdr ( car ( cdr ( cdr ( car ( cdr ( ( a b c d ) ( e f ( g s h ( i j k ) l ) m n ) o p )) ( cdr ( ( a b c d ) ( e f ( g s h ( i j k ) l ) m n ) o p ))))))))\
+After Build:  (car (cdr (car (cdr (cdr (car (cdr ((a b c d )(e f (g s h (i j k )l )m n )o p )(cdr ((a b c d )(e f (g s h (i j k )l )m n )o p )))))))))\
+After Eval:   s\
+\
+Before Build: ( car '( cdr ( cdr ( cdr ( car ( cdr ( cdr ( car ( cdr ( ( a b c d ) ( e f ( g s h ( i j k ) l ) m n ) o p )) ( cdr ( ( a b c d ) ( e f ( g s h ( i j k ) l ) m n ) o p ))))))))))\
+After Build:  (car (cdr (cdr (cdr (car (cdr (cdr (car (cdr ((a b c d )(e f (g s h (i j k )l )m n )o p )(cdr ((a b c d )(e f (g s h (i j k )l )m n )o p )))))))))))\
+After Eval:   i j k\
+\
+// I was unable to get my cons to put together the strings however I was able to achieve the results in the last two runs.}
