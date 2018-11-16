@@ -1,0 +1,19 @@
+;; Dribble of #<IO TERMINAL-STREAM> started on 2018-11-15 18:33:07.
+
+"0) Items within the list"
+(5 -7 12 -9 13 8 -8 2 -10 21)
+"1) Length of List"
+10
+"2) Sum of List"
+27
+"3) Average of List"
+2.7
+"4) Sum of Positive Numbers"
+61
+"5) Average of Positive Numbers"
+10.166667
+"6) Sum of Negative Numbers"
+-34
+"7) Average of Negative Numbers"
+-8.5
+;; Dribble of #<IO TERMINAL-STREAM> finished on 2018-11-15 18:33:07.

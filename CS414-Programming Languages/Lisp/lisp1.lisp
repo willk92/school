@@ -1,3 +1,8 @@
+;William Kelley
+;CS414-Programming Languages
+;LISP Workout 1
+
+
 ;Setup List and Functions to Act on Lisp
 
 ;set up a list
@@ -60,38 +65,59 @@
 
 ;Using Functions on List
 
+(dribble "/Users/williamkelley/Documents/GitHub/school/CS414-Programming Languages/Lisp/output.txt")
+
 ;print the list
-(print "Items within the list")
+(print "0) Items within the list")
 (print l)
 
 ;print result of len(list)
-(print "Length of List")
+(print "1) Length of List")
 (print (len l))
 
 ;print result of sum(list)
-(print "Sum of List")
+(print "2) Sum of List")
 (print (sum l))
 
 ;print result of avg(list)
-(print "Average of List")
+(print "3) Average of List")
 (print (avg l))
 
-;print list of positives
-(print "List of Positives")
-(print (pos l))
-
 ;print sum of positive numbers
-(print "Sum of Positive Numbers")
+(print "4) Sum of Positive Numbers")
 (print (possum l))
 
 ;print average of positive numbers
-(print "Average of Positive Numbers")
+(print "5) Average of Positive Numbers")
 (print (posavg l))
 
 ;print sum of negative numbers
-(print "Sum of Negative Numbers")
+(print "6) Sum of Negative Numbers")
 (print (negsum l))
 
 ;print number of negatives
-(print "Average of Negative Numbers")
+(print "7) Average of Negative Numbers")
 (print (negavg l))
+
+(dribble)
+
+;; [1]> (load "/Users/williamkelley/Documents/GitHub/school/CS414-Programming Languages/Lisp/lisp1.lisp")
+;; ;; Loading file /Users/williamkelley/Documents/GitHub/school/CS414-Programming Languages/Lisp/lisp1.lisp ...
+;; "0) Items within the list"
+;; (5 -7 12 -9 13 8 -8 2 -10 21)
+;; "1) Length of List"
+;; 10
+;; "2) Sum of List"
+;; 27
+;; "3) Average of List"
+;; 2.7
+;; "4) Sum of Positive Numbers"
+;; 61
+;; "5) Average of Positive Numbers"
+;; 10.166667
+;; "6) Sum of Negative Numbers"
+;; -34
+;; "7) Average of Negative Numbers"
+;; -8.5
+;; ;; Loaded file /Users/williamkelley/Documents/GitHub/school/CS414-Programming Languages/Lisp/lisp1.lisp
+;; T
