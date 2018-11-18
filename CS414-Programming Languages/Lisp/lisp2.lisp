@@ -18,11 +18,11 @@
 
 ;To display (loc n list) works
 (format t "Display item(n) within list(l)~%")
-(print "Location 0 in List l")
+(format t "~%Location 0 in List l")
 (print (loc 0 l))
-(print "Location 1 in List l")
+(format t "~%Location 1 in List l")
 (print (loc 1 l))
-(print "Location 4 in List l(sub-list)")
+(format t "~%Location 4 in List l(sub-list)")
 (print (loc 4 l))
 
 (dribble)
