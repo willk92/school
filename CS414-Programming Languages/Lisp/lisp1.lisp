@@ -65,7 +65,7 @@
 
 ;Using Functions on List
 
-(dribble "/Users/williamkelley/Documents/GitHub/school/CS414-Programming Languages/Lisp/output.txt")
+(dribble "/Users/williamkelley/Documents/GitHub/school/CS414-Programming Languages/Lisp/output_lisp1.txt")
 
 ;print the list
 (print "0) Items within the list")
