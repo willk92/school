@@ -1,0 +1,50 @@
+;; Dribble of #<IO TERMINAL-STREAM> started on 2018-11-20 19:14:19.
+Display Index of an Item if it is within the list
+Location of element a
+0
+Location of element e
+4
+Location of element c
+2
+Location of element z
+NIL
+
+Display item(n) within list(l)
+
+Location 0 in List l
+5
+Location 1 in List l
+7
+Location 4 in List l(sub-list)
+(8 8)
+
+Merge and order two lists
+(1 2 3 4 6)
+(1 1 3 4 4 5 6 6 7 7 8 8 9 10 14 17 78 99 100 123)
+(1 2 3 4 4 5 6 7 8 9 9 13 16 18 22 88 99 100 101 102 112)
+
+Merge infinite lists
+(1 2 3 2 3 4 4 5 6)
+(5 7 8 9 2 3 4 4 5 6 13 16 18 22 9 8 1 2 3 5 9 4 5 6 1 2 3)
+
+Flatten a list
+(1 2 3 4 5 6)
+(A B C E F G)
+(A B C E F G 1 2 3 4 5 6)
+
+Reverse a list
+(E D C B A)
+(1 2 3 4 5)
+(A 2 D 4 C 2 A 1)
+
+Counter number of atoms in list
+6
+12
+27
+
+Remove Nth element from a list
+(1 2 3)
+(1 2 3 4)
+(2 3 4)
+(1 3 4)
+;; Dribble of #<IO TERMINAL-STREAM> finished on 2018-11-20 19:14:19.

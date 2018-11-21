@@ -45,9 +45,9 @@
 )
 
 ;Reverse a list
-(defun reverse (list)
+(defun reverselist (list)
       (cond ((null list) '())
-            (t (append (rev (cdr list)) (list (car list))))
+            (t (append (reverselist (cdr list)) (list (car list))))
       )
 )
 
@@ -71,7 +71,7 @@
     )
 )
 
-;(dribble "/Users/williamkelley/Documents/GitHub/school/CS414-Programming Languages/Lisp/output_lisp2.txt")
+(dribble "/Users/williamkelley/Documents/GitHub/school/CS414-Programming Languages/Lisp/output_lisp2.txt")
 
 ;(1)Show the index of an item in a list
 (format t "Display Index of an Item if it is within the list")
@@ -114,9 +114,9 @@
 
 ;(7)Reverse a list
 (format t "~%~%Reverse a list")
-(print (reverse '(a b c d e)))
-(print (reverse '(5 4 3 2 1)))
-(print (reverse '(1 a 2 c 4 d 2 a)))
+(print (reverselist '(a b c d e)))
+(print (reverselist '(5 4 3 2 1)))
+(print (reverselist '(1 a 2 c 4 d 2 a)))
 
 ;(8)Counter number of atoms
 (format t "~%~%Counter number of atoms in list")
@@ -131,4 +131,4 @@
 (print (removenth 0 '(1 2 3 4)))
 (print (removenth 1 '(1 2 3 4)))
 
-;(dribble)
+(dribble)
