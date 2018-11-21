@@ -40,7 +40,8 @@
 	   (pos (cdr list))))             ;Recursion on rest of list
     ((< (car list) 0)               ;Negative numer?
      (pos (cdr list))
-     ))
+    )
+  )
 )
 
 ;sum of positive numbers in list
