@@ -34,7 +34,8 @@
 	)
 )
 
-(defun colorstouse(colorlist neighborcolorlist);this compares neighbor color list with good list -- gives good list
+;compares neighbor color list with good list
+(defun colorstouse(colorlist neighborcolorlist)
 	(cond
 		((null colorlist) ())
 		((checklist (car colorlist) neighborcolorlist) (colorstouse (cdr colorlist) neighborcolorlist))
@@ -42,23 +43,22 @@
 	)
 )
 
-(defun colorelement(colornode neighborlist colorlist usedcolors) ;current is a
-	(cond ;check if first in neighborlist doesnt have prop (color)           this gets good colors to use
+;build/print colored elements
+(defun colorelement(colornode neighborlist colorlist usedcolors)
+	(cond
 		((null (get (car neighborlist) 'color)) (setf (get colornode 'color) (car (colorstouse colorlist usedcolors) ))
-               (format t  "~A: ~A~%" colornode (get colornode 'color))  );print out the colors
+               (format t  "~A: ~A~%" colornode (get colornode 'color))  )
 
 		(t (colorelement colornode (cdr neighborlist) colorlist (cons (get (car neighborlist) 'color) usedcolors)))
 	)
-)   	;cons to build usedcolor list
+)
 
 
 
-
-(defun evaluatelist(statelist colorlist) ;this one calls all of the others
+;evaluates list to assign colors
+(defun evaluatelist(statelist colorlist)
 	(cond
-		((null statelist) nil);this iterates bigger list
-		;pass in state node the list of neighbors for that letter and the color list
-		;used colors is nil at first
+		((null statelist) nil)
 		(t (colorelement (caar statelist) (cdar statelist) colorlist () ) (evaluatelist (cdr statelist) colorlist))
 	)
 )

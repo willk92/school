@@ -1,4 +1,4 @@
-;; Dribble of #<IO TERMINAL-STREAM> started on 2018-11-27 13:39:15.
+;; Dribble of #<IO TERMINAL-STREAM> started on 2018-11-28 10:08:51.
 Printing result of running (eachstudent) function
 ((SEYMORE . 3.3076923) (ICHAHBOD . 3.5333333) (ZACKERY . 3.1875) (TUKERVILLE . 3.5294118) (SIMONSAYS . 3.7222223) (SNICKER . 3.3125) (GLASS . 0.93333334)) 
 
@@ -20,4 +20,4 @@ GLASS
 
 Class Average GPA
 3.0751417 
-;; Dribble of #<IO TERMINAL-STREAM> finished on 2018-11-27 13:39:15.
+;; Dribble of #<IO TERMINAL-STREAM> finished on 2018-11-28 10:08:51.

@@ -4,6 +4,8 @@
 ;CS414-Programming Languages
 ;Still need to implement sort based on either name or gpa
 
+;Just brought in the class into this file instead of loading two files separately.
+;Same result is produced if I load "class.lisp" and then run the code
 (setq class '
   (
     ((name Seymore) (eng 3 4.0) (mat 3 3.0) (his 3 4.0) (bio 3 2.0) (biol 1 4.0))
@@ -79,7 +81,7 @@
   )
 )
 
-; Create list from getting student name and gpa
+; Create list from getting student name and gpa to provide cleaner function calls
 (setq studentgpa (eachstudent class))
 
 ;Using functions for gpa
