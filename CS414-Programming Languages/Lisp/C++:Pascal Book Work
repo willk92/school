@@ -1,0 +1,15 @@
+William Kelley
+C++ Pascal Book Work
+
+10.
+
+Set intersection could be used to determine if an element is in fact a member of another set. You could also copy set S into another array and use the intersection to verify they are elements of each other.
+
+13.
+
+(define array of desired variable types)
+(define array of pointers matching variable types from previous array)
+
+14.
+
+Develop something similar to how C++ can determine if the character lies between “a” 		to “z” as well as if a number lies between integer 0 and 9.
