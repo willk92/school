@@ -12,7 +12,7 @@ struct Pizza {
   // figure out how to keep track of toppings being used and their prices
 private:
   map<string, float> toppings;
-  // Standard Pizza(assumed Margherita was standard with no toppings)
+  // Standard Pizza
   const static float std_reg = 7.99;
   // Specialty Pizzas
   float Margherita = 7.99;
