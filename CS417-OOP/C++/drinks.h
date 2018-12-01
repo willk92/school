@@ -31,16 +31,16 @@ public:
 Drinks::Drinks()
 {
   dietdrink = 0;
-  regdrink = 0;
-  water = 0;
-  beer = 0;
+  regdrink  = 0;
+  water     = 0;
+  beer      = 0;
 }
 Drinks::Drinks(int num_diet, int num_reg, int num_water, int num_beer)
 {
-  dietdrink = num_diet;
-  regdrink = num_reg;
-  water = num_water;
-  beer = num_beer;
+  dietdrink   = num_diet;
+  regdrink    = num_reg;
+  water       = num_water;
+  beer        = num_beer;
 }
 void Drinks::set_diet_drink(int num_diet)
 {
