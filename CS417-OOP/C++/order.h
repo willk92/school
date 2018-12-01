@@ -13,13 +13,13 @@ private:
   list<Pizza> pizzas;
   list<Drinks> drinks;
   list<string> items;
+  list<string> toppingsForPizza;
   map<string, float> souvenirs;
   float orderPrice;
 
 public:
   Order();
-  void add_toppings();
-  void add_specialty_pizza(string pizzaName, string size);
+  void add_pizza(string pizzaName, string size);
   void add_souvenirs(string souvenirName)
 };
 
@@ -31,7 +31,7 @@ Order::Order()
   orderPrice = 0.00;
 }
 
-void Order::add_specialty_pizza(string pizzaName, string size)
+void Order::add_pizza(string pizzaName, string size)
 {
   Pizza p;
   p.set_pizza_type(pizzaName);
@@ -44,7 +44,11 @@ void Order::add_specialty_pizza(string pizzaName, string size)
   // Pizza is a custom, therefore we need to accept customizations
   else if(pizzaName == "Custom" || pizzaName == "custom")
   {
-    // Call f(x) to build custom pizza
+    for (int i = 0; i <= toppingsForPizza.size(); ++i)
+    {
+      p.add_topping(toppingsForPizza /*first iterator*/);
+    }
+    pizzas.push_back(p);
   }
 }
 
