@@ -33,7 +33,7 @@ string showPWD();
 
 int main (int argv, char **argc)
 {
-    
+    fstream file("output.txt", ios::in | ios::out | ios::app);
     
     cout << "--- Wheel's Shell ---\n\n\n";
 
@@ -42,34 +42,38 @@ int main (int argv, char **argc)
     string pieces[2];
 
     while(input != "exit") {
-        //scenario where input comes from file needs to be figured out
+        input.clear();
         cout << "wheelsh::";
         getline(cin, input);
 
         if(input[0] == '>') {
             pieces[0] = input.substr(0, input.find(' '));
             pieces[0] = pieces[0].erase(0,1);
-            fout.open("output.txt");
+
             if(pieces[0] == "cd") {
                 pieces[1] = input.substr(input.find(' '));
                 pieces[1] = pieces[1].erase(0,1);
-                int rc = chdir(pieces[1].c_str());
-                cout << "Integer for chdir(): " << rc << endl;
+                int chDirSuccess = chdir(pieces[1].c_str());
+                if(chDirSuccess >= 0) {
+                    cout << showPWD() << endl;
+                }
+                else {
+                    cout << "chdir() failed" << endl;
+                }
             }
             else if (pieces[0] == "pwd") {
-                fout << showPWD();
+                file << showPWD();
                 cout << "pwd printed to output.txt" << endl;
             }
             else {
                 cout << "No valid command entered" << endl;
             }
-            fout.close();
         }
         else if (input[0] == '<') {
+            cout << "Requested file: " << input << endl;
             input.erase(0,1);
             fin.open(input.c_str());
             getline(fin, command);
-            cout << command << endl;
             fin.close();
         }
         else if (input == "exit") {
@@ -96,14 +100,8 @@ string showPWD() {
         // strip '\n' on ending of a line
         pwd = strtok(pwd, "\n");
 
-        Result = "Path info by execute shell command 'pwd':";
-        Result += "\n\tWorkdir:\t";
+        Result = "\nPath info:";
         Result += pwd;
-        Result += "\n\tFilepath:\t";
-        Result += pwd;
-        Result += "/";
-        Result +=  __FILE__;
-        Result += "\n";
     }
     return Result;
 }
