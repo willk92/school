@@ -1,0 +1,39 @@
+Step 1) Unzip files submitted alongside the PDF
+Step 2) Place all files in the same folder locally
+Step 3) Use command below to run the program locally
+./command_line
+Step 4) Supported commands are:
+    >pwd
+        - will print working directory
+    >cd /path/to/change/directory/to/here
+        - will change directory to any correctly entered directory
+    <{DESIRED_FILE_NAME}
+        - will output the contents of the first line of any .txt file
+
+        
+--- Wheel's Shell ---
+
+
+wheelsh::>pwd
+pwd printed to output.txt
+wheelsh::>cd /home/parallels/school/CS415-Operating Systems
+
+Path info:/home/parallels/school/CS415-Operating Systems
+wheelsh::>pwd
+pwd printed to output.txt
+wheelsh::>cd /home/parallels/school/CS415-Operating Systems/Terminal Stuff
+
+Path info:/home/parallels/school/CS415-Operating Systems/Terminal Stuff
+wheelsh::>pwd
+pwd printed to output.txt
+wheelsh::<input.txt
+Requested file: <input.txt
+cd /home/parallels/school/CS415-Operating Systems
+wheelsh::<input2.txt
+Requested file: <input2.txt
+pwd
+wheelsh::<input3.txt
+Requested file: <input3.txt
+cd /WHEEEEEL
+wheelsh::exit
+Good bye!
