@@ -1,3 +1,0 @@
-Path info by execute shell command 'pwd':
-	Workdir:	/home/parallels/school/CS415-Operating Systems/Terminal Stuff
-	Filepath:	/home/parallels/school/CS415-Operating Systems/Terminal Stuff/command_line.cpp

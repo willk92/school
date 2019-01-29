@@ -53,7 +53,8 @@ int main (int argv, char **argc)
             if(pieces[0] == "cd") {
                 pieces[1] = input.substr(input.find(' '));
                 pieces[1] = pieces[1].erase(0,1);
-                cout << "Outfile for Command ->" << pieces[1] << endl;
+                int rc = chdir(pieces[1].c_str());
+                cout << "Integer for chdir(): " << rc << endl;
             }
             else if (pieces[0] == "pwd") {
                 fout << showPWD();
