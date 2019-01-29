@@ -10,7 +10,13 @@ Step 4) Supported commands are:
     <{DESIRED_FILE_NAME}
         - will output the contents of the first line of any .txt file
 
-        
+*Still to implement, running code from input files
+*Creating file from >>, currently my program creates file if it doesn't exist
+    - If file does exist, it will append to that file.
+*Use requested structure
+*Use fork, exec, and wait system calls
+
+
 --- Wheel's Shell ---
 
 
