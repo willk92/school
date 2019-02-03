@@ -78,11 +78,10 @@ void arrayAverage(int *dataset1, int *dataset2, int *resultset, int size){
 void singleThreadAverage(int *dataset1, int *dataset2, int *resultset, int size){
   auto start = high_resolution_clock::now();
 
-  for (int i = 0; i < size; ++i){
-    resultset[i] = (dataset1[i] + dataset2[i]) / 2;
-  }
+  thread th1 = thread(averageArrays, dataset1, dataset2, resultset, size);
+  th1.join();
 
   auto stop = high_resolution_clock::now(); //for determining length of time taken to run
   auto duration = duration_cast<microseconds>(stop - start);
-  cout << "Time to run non-threaded: " << duration.count() << " microseconds" << endl;
+  cout << "Time to run single threaded: " << duration.count() << " microseconds" << endl;
 }
