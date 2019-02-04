@@ -694,3 +694,99 @@ int main()
 
 	system("PAUSE");
 }
+
+/*
+OUTPUT
+
+Note to testers: only accepts single digit values.
+
+Input File and Print for Matrix
+
+1->1
+1->2
+1->3
+1->4
+2->2
+2->4
+2->5
+3->1
+3->3
+3->5
+4->1
+4->4
+
+Input File and Print for List
+
+1->1
+1->2
+1->3
+1->4
+2->2
+2->4
+2->5
+3->1
+3->3
+3->5
+4->1
+4->4
+
+
+1->1
+1->2
+1->3
+1->4
+2->2
+2->4
+2->5
+3->1
+3->3
+3->5
+4->1
+4->4
+
+Add Edge to Matrix(enter 0 to exit): x,y with values separated by space
+5 6
+
+Enter another edge to enter or enter 0 0 to exit
+7 9
+
+Enter another edge to enter or enter 0 0 to exit
+0 0
+Copying Matrix to List
+
+1->1
+1->2
+1->3
+1->4
+2->2
+2->4
+2->5
+3->1
+3->3
+3->5
+4->1
+4->4
+5->5
+5->6
+7->7
+7->9
+
+Copying List to Matrix
+
+1->1
+1->2
+1->3
+1->4
+2->2
+2->4
+2->5
+3->1
+3->3
+3->5
+4->1
+4->4
+
+
+
+Since my functions are virtually the same for either, I've only displayed the Matrix
+/*
