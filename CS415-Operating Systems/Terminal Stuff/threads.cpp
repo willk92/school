@@ -19,11 +19,16 @@ const int SIZE = 10000000;
 int main(){
   int *ary = new int[SIZE];
   int *bry = new int[SIZE];
-  int *results = new int[SIZE];
+  int *results = new int[2];
 
   fillWithRandoms(ary, bry, SIZE);
   arrayAverage(ary, bry, results, SIZE);
+
+  cout << results[0] / SIZE << endl << results[1]/SIZE << endl;
+
   singleThreadAverage(ary, bry, results, SIZE);
+
+
 
   return 0;
 }
@@ -43,14 +48,15 @@ void averageArrays(int *dataset1, int *dataset2, int *resultset, int size){
   int base = 0;
   if (size == (SIZE * (1.0 / 8.0)))
   {
-    base = size - (SIZE*(1.0/8.0));
+    base = size - (SIZE * (1.0 / 8.0));
   }
   else {
     base = size - (SIZE * (1.0 / 8.0)) + 1;
   }
-   while (base < size || base != SIZE){
-    resultset[base] = (dataset1[base] * dataset2[base]) / 2;
-    ++base;
+  while (base < size || base != SIZE){
+     resultset[0] += dataset1[base];
+     resultset[1] += dataset2[base];
+     ++base;
   }
 }
 
@@ -85,3 +91,10 @@ void singleThreadAverage(int *dataset1, int *dataset2, int *resultset, int size)
   auto duration = duration_cast<microseconds>(stop - start);
   cout << "Time to run single threaded: " << duration.count() << " microseconds" << endl;
 }
+
+/*
+Time to run threads: 524123 microseconds
+15
+60
+Time to run single threaded: 3714 microseconds
+*/
