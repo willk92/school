@@ -6,12 +6,12 @@ using namespace std;
 
 char alphabet[] = "abc";
 char multiplicationTable[3][3] = {
-  { 'a', 'c', 'c' },
-  { 'a', 'a', 'b' },
-  { 'c', 'c', 'c' }
+  { 'b', 'b', 'a' },
+  { 'c', 'b', 'a' },
+  { 'a', 'c', 'c' }
 };  // Dimensions are k*k.
 
-char *s = "bbbba";  // The string
+char *s = "bb";  // The string
 
 int N = strlen(s);
 int k = strlen(alphabet);
@@ -44,8 +44,8 @@ int isSymbolPossible(char *s, char symbol, int n) {
 }
 
 int main() {
-    if (isSymbolPossible(s,'a',N)) {
-      cout << "Yes!\n";
+    if (isSymbolPossible(s, 'a', N) == 1){
+        cout << "Yes!\n";
     } else {
       cout << "No...\n";
     }
