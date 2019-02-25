@@ -1,3 +1,5 @@
+--] Source: https://codegolf.stackexchange.com/questions/49050/tiling-a-2n-by-2n-grid-with-l-shaped-trominoes
+
 c=cycle
 z o(#)(x,y)=zipWith o(1#x)(2#y)
 f n x y=unlines$(z(+)(\m w->[c[0,m]!!div(w-1)(2^(n-k))|k<-[1..n]])(x,y),"O")%n

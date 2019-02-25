@@ -1,3 +1,5 @@
+// Source: https://stackoverflow.com/questions/31865203/algorithm-parenthesize-of-string-from-dynamic-programming-by-vazirani-et-al
+
 #include <iostream>
 #include <iomanip>
 #include <math.h>
@@ -11,7 +13,7 @@ char multiplicationTable[3][3] = {
   { 'a', 'c', 'c' }
 };  // Dimensions are k*k.
 
-char *s = "bb";  // The string
+char *s = "ccccaa";
 
 int N = strlen(s);
 int k = strlen(alphabet);
@@ -45,9 +47,20 @@ int isSymbolPossible(char *s, char symbol, int n) {
 
 int main() {
     if (isSymbolPossible(s, 'a', N) == 1){
+        cout << s << endl;
         cout << "Yes!\n";
     } else {
-      cout << "No...\n";
+        cout << s << endl;
+        cout << "No...\n";
     }
     return 0;
 }
+
+// acaca
+// Yes!
+// bbbba
+// Yes!
+// cccc
+// No...
+// ccccaa
+// No...
