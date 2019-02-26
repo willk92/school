@@ -32,6 +32,7 @@
     "type_traits": "cpp",
     "utility": "cpp",
     "vector": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "deque": "cpp"
   }
 }
