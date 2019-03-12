@@ -1,3 +1,11 @@
+// William Kelley
+// Evil Barber Program
+
+// Compile: gcc barber.c -o barber -lpthread -lm
+// Run: ./barber
+
+// Source: https://github.com/silasss/theSleepingBarberProblem
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -39,11 +47,11 @@ int main() {
 
     time_t endwait;
     time_t start = time(NULL);
-    time_t seconds = 30;
+    time_t seconds = 150;
 
     endwait = start + seconds;
 
-    printf("Program will simulate 30 seconds\n");
+    printf("Program will simulate 150 seconds\n");
 
     while (start < endwait) {
         struct strcClient client;
@@ -57,6 +65,7 @@ int main() {
 
     printf("\nClients serviced: %d", qtyClientsServiced);
     printf("\nClients turned away: %d", qtyClientsTurnedAway);
+    printf("\n");
 
     return 0;
 }
@@ -109,10 +118,10 @@ double distNormalRandom() {
     return res;
 }
 
-// Program will simulate 30 seconds
+// Program will simulate 150 seconds
 
-// Clients serviced: 11
-// Clients turned away: 6
+// Clients serviced: 51
+// Clients turned away: 48
 
 // ...Program finished with exit code 0
 // Press ENTER to exit console.
