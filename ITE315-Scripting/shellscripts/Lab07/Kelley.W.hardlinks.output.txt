@@ -1,0 +1,11 @@
+Commands Ran for Hard Linking
+
+ln hardlinks.sh subfolder/hardlinked.sh
+ln -s hardlinks.sh subfolder/softlinked.sh
+
+Result of running hardlinks.sh
+
+lnks: using find to search for links . . .
+./subfolder/hardlinked.sh
+./hardlinks.sh
+
