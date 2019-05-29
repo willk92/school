@@ -1,0 +1,6 @@
+The score entered was 1
+The score entered was 2
+The score entered was 3
+The score entered was 4
+The score entered was 5
+The average was 3
