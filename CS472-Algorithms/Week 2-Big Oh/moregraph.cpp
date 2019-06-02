@@ -41,7 +41,8 @@ public:
 	virtual void deleteEdge() { cout << "Parent class 'deleteEdge()'" << endl; };
 	virtual void BFS() { cout << "Parent class 'BFS()'" << endl; };
 	virtual void DFSUtil() { cout << "Parent class 'DFSUtil()'" << endl; };
-	virtual void DFS() { cout << "Parent class 'DFS()'" << endl; }
+	virtual void DFS() { cout << "Parent class 'DFS()'" << endl; };
+	virtual void MST() { cout << "Parent class 'MST()'" << endl; };
 };
 
 template <class T>
@@ -65,6 +66,8 @@ public:
 	void BFS(T v);
 	void DFSUtil(T v, bool visited[]);
 	void DFS(T v);
+	void MST();
+	void ShortestPath();
 };
 
 template <class T>
@@ -88,6 +91,8 @@ public:
 	void BFS(T v);
 	void DFSUtil(T v, bool visited[]);
 	void DFS(T v);
+	void MST();
+	void ShortestPath();
 };
 
 template<class T>
@@ -334,6 +339,18 @@ void AdjacencyMatrix<T>::DFS(T v)
 	// Call the recursive helper function
 	// to print DFS traversal
 	DFSUtil(v, visited);
+}
+
+template<class T>
+void AdjacencyMatrix<T>::MST()
+{
+	cout << "MST function for moregraph.cpp > AdjacencyMatrix" << endl;
+}
+
+template<class T>
+void AdjacencyMatrix<T>::ShortestPath()
+{
+	cout << "ShortestPath function for moregraph.cpp > AdjacencyMatrix" << endl;
 }
 
 template<class T>
@@ -584,6 +601,17 @@ void AdjacencyList<T>::DFS(T v)
 	DFSUtil(v, visited);
 }
 
+template<class T>
+void AdjacencyList<T>::MST()
+{
+	cout << "MST function for moregraph.cpp > AdjacencyList" << endl;
+}
+
+template<class T>
+void AdjacencyList<T>::ShortestPath()
+{
+	cout << "ShortestPath function for moregraph.cpp > AdjacencyList" << endl;
+}
 
 int main()
 {
@@ -690,6 +718,12 @@ int main()
 	copyMatrix.copyGraph(list.getGraph());
 	copyMatrix.printGraph();
 
+	matrix.MST();
+	list.MST();
+
+	matrix.ShortestPath();
+	list.ShortestPath();
+
 	cout << "\n\nSince my functions are virtually the same for either, I've only displayed the Matrix\n";
 
 	system("PAUSE");
@@ -786,7 +820,13 @@ Copying List to Matrix
 4->1
 4->4
 
+MST function for moregraph.cpp > AdjacencyMatrix
 
+MST function for moregraph.cpp > AdjacencyList
+
+ShortestPath function for moregraph.cpp > AdjacencyMatrix
+
+ShortestPath function for moregraph.cpp > AdjacencyList
 
 Since my functions are virtually the same for either, I've only displayed the Matrix
 /*
