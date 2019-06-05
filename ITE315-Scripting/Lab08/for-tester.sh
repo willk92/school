@@ -15,3 +15,10 @@ do
 		echo $fname
 	fi
 done
+echo "The above doesn't work and not sure how to make it work"
+for (( x=1;x<10;x++ ))
+do
+	echo −n "Roll #$x: "
+	echo −n $(( $RANDOM %6 + 1 ))
+	echo $(( $RANDOM %6 + 1 ))
+done

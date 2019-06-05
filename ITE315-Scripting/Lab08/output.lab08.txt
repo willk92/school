@@ -1,0 +1,36 @@
+Cartoon character names
+daffy,
+bugs,
+yosemite,
+foghorn
+The above doesn't work and not sure how to make it work
+−n Roll #1: 
+−n 1
+3
+−n Roll #2: 
+−n 4
+3
+−n Roll #3: 
+−n 1
+2
+−n Roll #4: 
+−n 4
+4
+−n Roll #5: 
+−n 6
+3
+−n Roll #6: 
+−n 6
+4
+−n Roll #7: 
+−n 6
+6
+−n Roll #8: 
+−n 4
+3
+−n Roll #9: 
+−n 1
+5
+
+Usage: whos id...
+
