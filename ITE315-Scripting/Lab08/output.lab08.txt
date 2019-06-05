@@ -34,3 +34,7 @@ The above doesn't work and not sure how to make it work
 
 Usage: whos id...
 
+helo
+hilo
+madt
+

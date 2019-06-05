@@ -1,0 +1,6 @@
+hello
+helo
+hilo
+mandatory
+madt
+tor
