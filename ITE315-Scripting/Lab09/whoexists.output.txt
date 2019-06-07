@@ -1,0 +1,76 @@
+AccountExpires         : 
+Description            : Built-in account for administering the computer/domain
+Enabled                : False
+FullName               : 
+PasswordChangeableDate : 
+PasswordExpires        : 
+UserMayChangePassword  : True
+PasswordRequired       : False
+PasswordLastSet        : 8/1/18 10:22:40 AM
+LastLogon              : 
+Name                   : Administrator
+SID                    : S-1-5-21-3783137071-1035200740-2959764955-500
+PrincipalSource        : Local
+ObjectClass            : User
+
+AccountExpires         : 
+Description            : A user account managed by the system.
+Enabled                : False
+FullName               : 
+PasswordChangeableDate : 
+PasswordExpires        : 
+UserMayChangePassword  : True
+PasswordRequired       : False
+PasswordLastSet        : 
+LastLogon              : 
+Name                   : DefaultAccount
+SID                    : S-1-5-21-3783137071-1035200740-2959764955-503
+PrincipalSource        : Local
+ObjectClass            : User
+
+AccountExpires         : 
+Description            : Built-in account for guest access to the 
+                         computer/domain
+Enabled                : False
+FullName               : 
+PasswordChangeableDate : 
+PasswordExpires        : 
+UserMayChangePassword  : False
+PasswordRequired       : False
+PasswordLastSet        : 
+LastLogon              : 
+Name                   : Guest
+SID                    : S-1-5-21-3783137071-1035200740-2959764955-501
+PrincipalSource        : Local
+ObjectClass            : User
+
+AccountExpires         : 
+Description            : A user account managed and used by the system for 
+                         Windows Defender Application Guard scenarios.
+Enabled                : False
+FullName               : 
+PasswordChangeableDate : 9/4/18 2:12:52 PM
+PasswordExpires        : 10/16/18 2:12:52 PM
+UserMayChangePassword  : True
+PasswordRequired       : True
+PasswordLastSet        : 9/4/18 2:12:52 PM
+LastLogon              : 
+Name                   : WDAGUtilityAccount
+SID                    : S-1-5-21-3783137071-1035200740-2959764955-504
+PrincipalSource        : Local
+ObjectClass            : User
+
+AccountExpires         : 
+Description            : 
+Enabled                : True
+FullName               : 
+PasswordChangeableDate : 
+PasswordExpires        : 
+UserMayChangePassword  : True
+PasswordRequired       : False
+PasswordLastSet        : 8/1/18 10:22:40 AM
+LastLogon              : 3/10/19 3:03:06 PM
+Name                   : williamkelley
+SID                    : S-1-5-21-3783137071-1035200740-2959764955-1000
+PrincipalSource        : Local
+ObjectClass            : User

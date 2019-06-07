@@ -1,0 +1,36 @@
+PS C:\Users\williamkelley> .\whatami.ps1
+
+SettingID Name                          ScreenSaverActive ScreenSaverSecure Scr
+                                                                            een
+                                                                            Sav
+                                                                            erT
+                                                                            ime
+                                                                            out
+--------- ----                          ----------------- ----------------- ---
+          NT AUTHORITY\SYSTEM           False                                  
+          NT AUTHORITY\LOCAL SERVICE    False                                  
+          NT AUTHORITY\NETWORK SERVICE  False                                  
+          WILLIAMKELL427F\williamkelley False                                  
+          .DEFAULT                      False                                  
+
+SMBIOSBIOSVersion : 12.2.1 (41615)
+Manufacturer      : Parallels Software International Inc.
+Name              : 12.2.1 (41615)
+SerialNumber      : Parallels-BD D1 5C 70 35 C4 4A EB 9F 8A 21 61 CB 14 33 05
+Version           : PRLS   - 1
+
+
+Caption           : Intel64 Family 6 Model 94 Stepping 3
+DeviceID          : CPU0
+Manufacturer      : GenuineIntel
+MaxClockSpeed     : 2592
+Name              : Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+SocketDesignation : CPU Socket #0
+
+
+Domain              : WORKGROUP
+Manufacturer        : Parallels Software International Inc.
+Model               : Parallels Virtual Platform
+Name                : WILLIAMKELL427F
+PrimaryOwnerName    : William Kelley
+TotalPhysicalMemory : 4276637696
