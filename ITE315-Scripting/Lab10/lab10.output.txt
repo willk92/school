@@ -4,3 +4,11 @@ Part 1
 
 Part 2
 
+Physical memory          Bytes         KB      MB
+=================================================
+Available           2136104960    2086040    2037
+Total               4276637696    4176404    4079
+
+Part 03
+
+Normal

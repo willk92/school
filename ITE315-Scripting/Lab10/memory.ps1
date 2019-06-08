@@ -2,12 +2,12 @@
 
 $free = ( Get-WMIObject Win32_OperatingSystem -ComputerName $computer ).FreePhysicalMemory * 1KB
 $phys = ( Get-WMIObject Win32_OperatingSystem -ComputerName $computer ).TotalVisibleMemorySize * 1KB
-if( $computer -ne "." ) {
-  Write-Host
-  Write-Host "Computer: $computer"
+if ( $computer -ne "." ) {
+	Write-Host
+	Write-Host "Computer: $computer"
 }
 
-# Table Header
+# Table header
 Write-Host
 Write-Host "Physical memory".PadRight( 16, " " ) -NoNewline
 Write-Host "Bytes".PadLeft( 14, " " ) -NoNewline
