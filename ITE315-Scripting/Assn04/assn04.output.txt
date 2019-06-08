@@ -10,3 +10,15 @@ hello world
 111
 114
 108
+
+
+Part 02
+
+Part 03 - Bash
+
+Part 03 - PowerShell
+PS > .\assn04.part03.ps1
+23
+
+PS > .\assn04.part03.ps1 01/01/2019
+1
