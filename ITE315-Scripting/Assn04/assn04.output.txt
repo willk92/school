@@ -13,7 +13,18 @@ hello world
 
 
 Part 02
-
+$ ./assn04.part02.sh "hello world"
+104
+101
+108
+108
+111
+32
+119
+111
+114
+108
+100
 
 Part 03 - Bash
 $ ./assn04.part03.sh
