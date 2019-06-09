@@ -39,3 +39,15 @@ PS > .\assn04.part03.ps1
 
 PS > .\assn04.part03.ps1 01/01/2019
 1
+
+Part 04
+$ ./assn04.part04.sh .doc .docx
+Converting file 1.doc to 1.docx
+Converting file 2.doc to 2.docx
+Converting file 3.doc to 3.docx
+
+$ ls *.docx
+1.docx  2.docx  3.docx
+
+$ ls *.doc
+ls: cannot access '*.doc': No such file or directory
