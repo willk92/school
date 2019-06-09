@@ -1,5 +1,8 @@
 #!/bin/bash
 # Convert string to ascii characters
+# Sources: Lots of stack overflow for help
+# Had trouble converting to character array and then converting each
+# Ran into an issue where it prints the EOL delimiter
 
 STRING="$1"
 
