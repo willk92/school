@@ -17,7 +17,7 @@ my $apr       = 9.5;
 my $reportFH= openReport( $outfile ) ;
 printHeaders( $reportFH );
 interestReport( $reportFH, $nestEgg, $year, $duration, $apr );
-reportFooter( $reportFH, $nestEgg, $duration ,$apr );
+reportFooter( $reportFH, $nestEgg, $duration, $apr );
 
 sub openReport {
   my ( $outfile ) = @_;
