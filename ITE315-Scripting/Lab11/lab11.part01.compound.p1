@@ -28,7 +28,7 @@ sub openReport {
 sub interestReport {
 # Get our parameters. Note that these variables won ’t clobber the
 # global variables with the same name .
-  my ( $reportFH, $nestEgg, $year, $duration , $apr ) = @_;
+  my ( $reportFH, $nestEgg, $year, $duration, $apr ) = @_;
 
 # Calculate interest for each year.
   for my $i ( 1 .. $duration ) {
