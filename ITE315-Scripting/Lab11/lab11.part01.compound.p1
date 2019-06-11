@@ -1,0 +1,66 @@
+#!/usr/bin/perl
+#
+# File: lab11.part01.compound.p1
+# Author: William Kelley
+# Purpose: Demo Perl by implementing a compound interest calculator
+
+use 5.010;
+use strict;
+use warnings;
+
+my $outfile   = 'interest.txt'
+my $nestEgg   = 10000;
+my $year      = 2008;
+my $duration  = 10;
+my $apr       = 9.5;
+
+my $reportFH= openReport( $outfile ) ;
+printHeaders( $reportFH );
+interestReport( $reportFH, $nestEgg, $year, $duration, $apr );
+reportFooter( $reportFH, $nestEgg, $duration ,$apr );
+
+sub openReport {
+  my ( $outfile ) = @_;
+  open my $report, ’>’, $outfile or die "Can’t open ’$outfile ’: $!";
+  return $report;
+}
+
+sub interestReport {
+# Get our parameters. Note that these variables won ’t clobber the
+# global variables with the same name .
+  my ( $reportFH, $nestEgg, $year, $duration , $apr ) = @_;
+
+# Calculate interest for each year.
+  for my $i ( 1 .. $duration ) {
+    my $interest = int( ( $apr / 100 ) ∗ $nestEgg ∗ 100 ) / 100;
+    my $line =
+      join "\t", $year + $i, $nest_egg, $interest, $nest_egg + $interest;
+
+    say $line
+    say $reportFH $line;
+    $nestEgg += $interest;
+  }
+}
+
+sub printHeaders {
+my ( $reportFH ) = @_;
+
+# Print the headers for our report.
+  say "Year\tBalance \tInterest \tNew balance";
+  say $reportFH "Year\ tBalance \tInterest \tNew balance";
+}
+
+sub report_footer {
+  my ( $reportFH, $nestEgg, $duration , $apr ) = @_;
+
+  say "\nOur original assumptions: ";
+  say "Nest egg: $nestEgg";
+
+  say "Number of years: $duration";
+  say "Interestrate: $apr";
+
+  say $reportFH "\nOur original assumptions: ";
+  say $reportFH "Nest egg: $nestEgg";
+  say $reportFH "Number of years: $duration";
+  say $reportFH "Interestrate: $apr";
+}
