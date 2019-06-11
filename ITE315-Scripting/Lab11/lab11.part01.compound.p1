@@ -8,7 +8,7 @@ use 5.010;
 use strict;
 use warnings;
 
-my $outfile   = 'interest.txt'
+my $outfile   = 'interest.txt';
 my $nestEgg   = 10000;
 my $year      = 2008;
 my $duration  = 10;
