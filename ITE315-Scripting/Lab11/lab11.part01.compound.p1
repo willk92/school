@@ -5,7 +5,6 @@
 # Purpose: Demo Perl by implementing a compound interest calculator
 
 use 5.010;
-use strict;
 use warnings;
 
 my $outfile   = 'interest.txt';
@@ -14,14 +13,14 @@ my $year      = 2008;
 my $duration  = 10;
 my $apr       = 9.5;
 
-my $reportFH= openReport( $outfile ) ;
+my $reportFH = openReport( $outfile ) ;
 printHeaders( $reportFH );
 interestReport( $reportFH, $nestEgg, $year, $duration, $apr );
 reportFooter( $reportFH, $nestEgg, $duration, $apr );
 
 sub openReport {
   my ( $outfile ) = @_;
-  open my $report, '>', $outfile or die "Can’t open ’$outfile ’: $!";
+  open my $report, '>', $outfile or die "Can’t open '$outfile': $!";
   return $report;
 }
 
@@ -57,10 +56,10 @@ sub reportFooter {
   say "Nest egg: $nestEgg";
 
   say "Number of years: $duration";
-  say "Interestrate: $apr";
+  say "Interest rate: $apr";
 
   say $reportFH "\nOur original assumptions: ";
   say $reportFH "Nest egg: $nestEgg";
   say $reportFH "Number of years: $duration";
-  say $reportFH "Interestrate: $apr";
+  say $reportFH "Interest rate: $apr";
 }
