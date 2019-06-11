@@ -21,7 +21,7 @@ reportFooter( $reportFH, $nestEgg, $duration, $apr );
 
 sub openReport {
   my ( $outfile ) = @_;
-  open my $report, `>`, $outfile or die "Can’t open ’$outfile ’: $!";
+  open my $report, '>', $outfile or die "Can’t open ’$outfile ’: $!";
   return $report;
 }
 
@@ -32,9 +32,9 @@ sub interestReport {
 
 # Calculate interest for each year.
   for my $i ( 1 .. $duration ) {
-    my $interest = int(($apr/100) ∗ $nestEgg ∗ 100) / 100;
+    my $interest = int(($apr/100) * $nestEgg * 100) / 100;
     my $line =
-      join "\t", $year + $i, $nest_egg, $interest, $nest_egg + $interest;
+      join "\t", $year + $i, $nestEgg, $interest, $nestEgg + $interest;
 
     say $line
     say $reportFH $line;
@@ -46,12 +46,12 @@ sub printHeaders {
 my ( $reportFH ) = @_;
 
 # Print the headers for our report.
-  say "Year\tBalance \tInterest \tNew balance";
-  say $reportFH "Year\ tBalance \tInterest \tNew balance";
+  say "Year \tBalance \tInterest \tNew balance";
+  say $reportFH "Year \tBalance \tInterest \tNew balance";
 }
 
-sub report_footer {
-  my ( $reportFH, $nestEgg, $duration , $apr ) = @_;
+sub reportFooter {
+  my ( $reportFH, $nestEgg, $duration ,$apr ) = @_;
 
   say "\nOur original assumptions: ";
   say "Nest egg: $nestEgg";
