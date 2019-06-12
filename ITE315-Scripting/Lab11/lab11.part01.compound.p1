@@ -14,9 +14,9 @@ my $duration  = 10;
 my $apr       = 9.5;
 
 my $reportFH = openReport( $outfile ) ;
-printHeaders( $reportFH );
+printHeaders(   $reportFH );
 interestReport( $reportFH, $nestEgg, $year, $duration, $apr );
-reportFooter( $reportFH, $nestEgg, $duration, $apr );
+reportFooter(   $reportFH, $nestEgg, $duration, $apr );
 
 sub openReport {
   my ( $outfile ) = @_;
@@ -30,10 +30,9 @@ sub interestReport {
   my ( $reportFH, $nestEgg, $year, $duration, $apr ) = @_;
 
 # Calculate interest for each year.
-  for my $i ( 1 .. $duration ) {
+  for my $i ( 1..$duration ) {
     my $interest = int(($apr/100) * $nestEgg * 100) / 100;
-    my $line =
-      join "\t", $year + $i, $nestEgg, $interest, $nestEgg + $interest;
+    my $line = join "\t", $year + $i, $nestEgg, $interest, $nestEgg + $interest;
 
     say $line
     say $reportFH $line;
