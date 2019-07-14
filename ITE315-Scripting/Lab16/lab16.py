@@ -17,13 +17,13 @@ def frequencyTable(dnaList):
   return frequency_matrix
 
 def mutateDna(dnaList):
-  for _ in range(1000):
+  for _ in range(100):
     #get a random sequence
     index = random.randint(0, 999)
     #assign it as a list to be able to edit one gene
     mutate = list(dnaList[index])
     #insert the mutated gene
-    mutate[random.randint(0, 2)] = random.choice('ATGC')
+    mutate = generateString(3)
     #convert back to a string
     dnaList[index] = ''.join(mutate)
   return dnaList
